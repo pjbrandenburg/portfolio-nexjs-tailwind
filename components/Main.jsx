@@ -10,7 +10,7 @@ const Main = () => {
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>Let's build something together!</p>
                 <h1 className='py-4 text-gray-700'>
-                    Hi, I'm <span className='text-[#5651e5]'>Patrick</span>
+                    Hi, I'm <span className='text-[#1f75fe]'>Patrick</span>
                 </h1>
                 <h1 className='py-2 text-gray-700'>
                     A Software Engineer

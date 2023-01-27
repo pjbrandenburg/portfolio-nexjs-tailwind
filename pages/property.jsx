@@ -67,7 +67,7 @@ const property = () => {
             className="rounded-full shadow-lg shadow-gray-400 
                         p-6 cursor-pointer hover:scale-110 ease-in duration-300"
           >
-            <HiChevronDoubleLeft className="text-[#5651e5]" size={30} />
+            <HiChevronDoubleLeft className="text-[#1f75fe]" size={30} />
             {/* <p className='underline cursor-pointer'>Back</p> */}
           </div>
         </Link>

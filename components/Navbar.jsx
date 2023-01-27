@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Logo from './Logo'
 
 const Navbar = () => {
 
@@ -54,12 +55,13 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
+          <Logo/>
+          {/* <Image
             src="/../public/assets/navLogo.png"
             alt="Home"
             width="125"
             height="50"
-          />
+          /> */}
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -130,7 +132,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#1f75fe]">
                 Let's Connect
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%}'>
