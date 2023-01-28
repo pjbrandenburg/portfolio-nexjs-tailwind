@@ -16,7 +16,7 @@ const audioWide = Audiowide({
 const Contact = () => {
   return (
     <div id="contact" className="w-full lg:screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+      <div className="max-w-[1240px] m-auto px-2 py-32 w-full">
         <p className="text-xl tracking-widest uppercase text-[#1f75fe]">
           Contact
         </p>
