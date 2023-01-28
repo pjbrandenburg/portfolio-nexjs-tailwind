@@ -1,12 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import React from 'react'
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillHouseFill, BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import contact from '../public/assets/contact.jpg';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillHouseFill, BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import contact from "../public/assets/contact.jpg";
+import { Audiowide } from "@next/font/google";
 
+const audioWide = Audiowide({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const Contact = () => {
   return (
@@ -28,7 +33,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name here</h2>
+                <div className={audioWide.className}>
+                  <h2 className="py-2 text-[#1f75fe]">Patrick Brandenburg</h2>
+                </div>
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for feelance or full-time positions. Contact me
@@ -145,6 +152,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;
