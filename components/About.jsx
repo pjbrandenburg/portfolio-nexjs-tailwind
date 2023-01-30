@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Headshot from '../public/assets/Headshot.png'
+import laptop from '../public/assets/laptop.jpg'
 
 const About = () => {
   return (
@@ -23,16 +24,18 @@ const About = () => {
                 computer vision, full stack development, and more. 
                 </p>
                 <p className='py-2 text-gray-600 underline cursor-pointer'>
-                    Check out some of my latest projects
+                    <a href='https://github.com/pjbrandenburg'>
+                        Check out some of my latest projects!
+                    </a>
                 </p>
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                 <Image 
                     className='rounded-xl'
-                    src={Headshot} 
-                    width='200' 
-                    height='200' 
-                    alt='headshot' 
+                    src={laptop} 
+                    width='450' 
+                    height='450' 
+                    alt='about' 
                     />
             </div>
         </div>
