@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Headshot from '../public/assets/Headshot.png'
 
 const About = () => {
   return (
@@ -10,24 +11,16 @@ const About = () => {
                 <h2 className='py-4'>Who I Am</h2>
                 <p className='py-2 text-gray-600'>// I am not your normal developer</p>
                 <p className='py-2 text-gray-600'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                 irure dolor in reprehenderit in voluptate velit esse cillum 
-                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                 cupidatat non proident, sunt in culpa qui officia deserunt
-                 mollit anim id est laborum.
+                I've taken a hobby and turned it into a profession. Learning the ins-and-outs of
+                coding and software development in my spare time has lead me down a path of becoming
+                a software engineer working in robotics. 
                 </p>
                 <p className='py-2 text-gray-600'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                 irure dolor in reprehenderit in voluptate velit esse cillum 
-                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                 cupidatat non proident, sunt in culpa qui officia deserunt
-                 mollit anim id est laborum.
+                With a background in mechanical and aerospace engineering and project management, I was 
+                always looking to expand my knowledge base. Minor exposure to coding in university 
+                gave me a glimpse into what was possible in the world of software. I've gone down the 
+                path of learning a number of modern development realms including machine learning, 
+                computer vision, full stack development, and more. 
                 </p>
                 <p className='py-2 text-gray-600 underline cursor-pointer'>
                     Check out some of my latest projects
@@ -36,7 +29,7 @@ const About = () => {
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                 <Image 
                     className='rounded-xl'
-                    src='/../public/assets/Headshot.png' 
+                    src={Headshot} 
                     width='200' 
                     height='200' 
                     alt='headshot' 

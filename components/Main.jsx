@@ -16,14 +16,13 @@ const Main = () => {
                     A Software Engineer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                 irure dolor in reprehenderit in voluptate velit esse cillum 
-                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                 cupidatat non proident, sunt in culpa qui officia deserunt
-                 mollit anim id est laborum.
+                As a hardware engineering turned software engineer, I have a unique
+                perspective on software development. I started coding in my spare time and
+                worked my way into a role through robotics and machine learning. I'm constantly 
+                looking to learn new technologies and expand my skillset.
+                </p>
+                <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
+                Currently working on implementing computer vision in mobile robots. 
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
