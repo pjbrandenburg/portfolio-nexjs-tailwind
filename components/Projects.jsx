@@ -16,24 +16,24 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8'>
             
                 <Projectitem 
-                    title='Property Finder' 
+                    title='This Website!' 
                     backgroundImg={propertyImg} 
-                    projectUrl='/property' 
+                    projectUrl='/portfolio' 
                 />
                 <Projectitem 
-                    title='Crypto App' 
+                    title='Discord Lookalike' 
                     backgroundImg={cryptoImg} 
-                    projectUrl='/property' 
+                    projectUrl='/chatroom' 
                 />
                 <Projectitem 
-                    title='Netlix' 
+                    title='License Plate Detector' 
                     backgroundImg={netflixImg} 
-                    projectUrl='/property' 
+                    projectUrl='/licensedetector' 
                 />
                 <Projectitem 
-                    title='Twitch' 
+                    title='E-Commerce Site' 
                     backgroundImg={twitchImg} 
-                    projectUrl='/property' 
+                    projectUrl='/ecommerce' 
                 />
 
             </div>

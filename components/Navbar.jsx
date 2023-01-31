@@ -17,10 +17,10 @@ const Navbar = () => {
 
     useEffect(() => {
       if (
-        router.asPath === '/property' || 
-        router.asPath === '/crypto' || 
-        router.asPath === '/netflix' || 
-        router.asPath === '/twitch' 
+        router.asPath === '/portfolio' || 
+        router.asPath === '/chatroom' || 
+        router.asPath === '/ecommerce' || 
+        router.asPath === '/licensedetector' 
       ) {
         setNavBg('transparent')
         setLinkColor('#f8f8f8')
@@ -99,12 +99,13 @@ const Navbar = () => {
           <div>
             <div className="flex w=full items-center justify-between">
             <Link href='/'>
-                <Image
+              <Logo/>
+                {/* <Image
                   src="/../public/assets/navLogo.png"
                   alt="/"
                   width="87"
                   height="35"
-                />
+                /> */}
               </Link>
               <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose />

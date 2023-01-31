@@ -5,7 +5,7 @@ import { RiRadioButtonFill } from 'react-icons/ri'
 import { HiChevronDoubleLeft } from 'react-icons/hi'
 import Link from 'next/link'
 
-const property = () => {
+const ecommerce = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -17,8 +17,8 @@ const property = () => {
           style={{ objectFit: "cover" }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Property Finder</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2">E-Commerce Site</h2>
+          <h3>Next.JS/Sanity FullStack</h3>
         </div>
       </div>
 
@@ -26,16 +26,16 @@ const property = () => {
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
+          <p className='py-2'>
+            My initial endeavor into creating a personal website led me down the path of learning
+            Django, which I chose due to it's robustness, industry usage, and to put Python skills
+            to good use. I came across a project that covered the full spectrum of a fullstack Django
+            application, which as creating a Discord-like chat application from scratch. 
+            Credit to Dennis Ivy on this project idea and implementation. 
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          <a href='https://github.com/pjbrandenburg/'>
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -47,15 +47,19 @@ const property = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                Next.JS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Javascript
+                Sanity.IO
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
+                HTML
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                CSS
               </p>
             </div>
           </div>
@@ -76,4 +80,4 @@ const property = () => {
   );
 }
 
-export default property
+export default ecommerce
