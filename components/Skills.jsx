@@ -10,7 +10,7 @@ import Python from '../public/assets/skills/python.png';
 import NextJS from '../public/assets/skills/nextjs.png'
 import Pytorch from '../public/assets/skills/PyTorch.png';
 import Django from '../public/assets/skills/django.png';
-import Opencv from '../public/assets/skills/Opencv.png';
+import Opencv from '../public/assets/skills/OpenCV.png';
 import Node from '../public/assets/skills/node.png';
 
 
