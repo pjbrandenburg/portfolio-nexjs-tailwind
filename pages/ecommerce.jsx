@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '../public/assets/projects/property.jpg'
+import ecommerceImg from '../public/assets/projects/ecommerce_cart.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { HiChevronDoubleLeft } from 'react-icons/hi'
 import Link from 'next/link'
@@ -12,13 +12,13 @@ const ecommerce = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
-          src={propertyImg}
+          src={ecommerceImg}
           fill
           style={{ objectFit: "cover" }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">E-Commerce Site</h2>
-          <h3>Next.JS/Sanity FullStack</h3>
+          <h3>Next.js/Sanity FullStack</h3>
         </div>
       </div>
 
@@ -27,11 +27,10 @@ const ecommerce = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className='py-2'>
-            My initial endeavor into creating a personal website led me down the path of learning
-            Django, which I chose due to it's robustness, industry usage, and to put Python skills
-            to good use. I came across a project that covered the full spectrum of a fullstack Django
-            application, which as creating a Discord-like chat application from scratch. 
-            Credit to Dennis Ivy on this project idea and implementation. 
+            This ECommerce platform is a fullstack web application built on Next.js and Sanity.IO.
+            It incorportates alist of items for sale, a shopping cart with payment, and a backend 
+            where additional items can be added. This project was created by following the JavaScrip Mastery
+            course. 
           </p>
           <a href='https://github.com/pjbrandenburg/'>
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
@@ -47,7 +46,7 @@ const ecommerce = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next.JS
+                Next.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -59,7 +58,7 @@ const ecommerce = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                CSS
+                SCSS
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '../public/assets/projects/property.jpg'
+import studybudImg from '../public/assets/projects/studybud.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { HiChevronDoubleLeft } from 'react-icons/hi'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const chatroom = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
-          src={propertyImg}
+          src={studybudImg}
           fill
           style={{ objectFit: "cover" }}
         />
@@ -30,7 +30,8 @@ const chatroom = () => {
             My initial endeavor into creating a personal website led me down the path of learning
             Django, which I chose due to it's robustness, industry usage, and to put Python skills
             to good use. I came across a project that covered the full spectrum of a fullstack Django
-            application, which as creating a Discord-like chat application from scratch. 
+            application, which as creating a Discord-like chat application from scratch. This is a CRUD 
+            application that utilized the Django REST Framework to make calls through an API.
             Credit to Dennis Ivy on this project idea and implementation. 
           </p>
           <a href='https://github.com/pjbrandenburg/'>

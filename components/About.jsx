@@ -10,7 +10,7 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='upercase text-xl tracking-widest text-[#1f75fe]'>About</p>
                 <h2 className='py-4'>Who I Am</h2>
-                <p className='py-2 text-gray-600'>// I am not your normal developer</p>
+                <p className='py-2 text-gray-600'>// Self-Starter, Motivated, Experienced</p>
                 <p className='py-2 text-gray-600'>
                 I've taken a hobby and turned it into a profession. Learning the ins-and-outs of
                 coding and software development in my spare time has lead me down a path of becoming
@@ -18,9 +18,9 @@ const About = () => {
                 </p>
                 <p className='py-2 text-gray-600'>
                 With a background in mechanical and aerospace engineering and project management, I was 
-                always looking to expand my knowledge base. Minor exposure to coding in university 
-                gave me a glimpse into what was possible in the world of software. I've gone down the 
-                path of learning a number of modern development realms including machine learning, 
+                always looking to expand my knowledge base. Exposure to coding in university 
+                gave me a glimpse into what was possible in the world of software. I've spent time
+                learning a number of modern development realms including machine learning, 
                 computer vision, full stack development, and more. 
                 </p>
                 <p className='py-2 text-gray-600 underline cursor-pointer'>

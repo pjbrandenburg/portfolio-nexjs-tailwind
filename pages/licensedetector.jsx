@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '../public/assets/projects/property.jpg'
+import licensedetectorImg from '../public/assets/projects/license_detector.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { HiChevronDoubleLeft } from 'react-icons/hi'
 import Link from 'next/link'
@@ -12,7 +12,7 @@ const licensedetector = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
-          src={propertyImg}
+          src={licensedetectorImg}
           fill
           style={{ objectFit: "cover" }}
         />
@@ -27,11 +27,14 @@ const licensedetector = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p className='py-2'>
-            My initial endeavor into creating a personal website led me down the path of learning
-            Django, which I chose due to it's robustness, industry usage, and to put Python skills
-            to good use. I came across a project that covered the full spectrum of a fullstack Django
-            application, which as creating a Discord-like chat application from scratch. 
-            Credit to Dennis Ivy on this project idea and implementation. 
+            I enrolled in the three courses provided by OpenCV to learn how to use OpenCV
+            and gain experience with deep learning. The first two courses focused on understanding
+            how OpenCV works while the third course focused mainly on current state of the art 
+            deep learning algorithms and libraries. The third course introduced many convolutional
+            neural networks, including AlexNet and VGG, as well as libraries and frameworks such as
+            YOLO and Detectron2. This particular project utilized a Mask-RCNN neural net within the 
+            Detectron2 platform trained on license plate data in order to identify license plates on 
+            static images as well as a video.
           </p>
           <a href='https://github.com/pjbrandenburg/'>
             <button className="px-8 py-2 mt-4 mr-8">Code</button>

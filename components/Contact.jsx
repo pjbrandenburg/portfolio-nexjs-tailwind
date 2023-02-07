@@ -36,14 +36,14 @@ const Contact = () => {
                 <div className={audioWide.className}>
                   <h2 className="py-2 text-[#1f75fe]">Patrick Brandenburg</h2>
                 </div>
-                <p>Front-End Developer</p>
+                <p>Full-Stack Developer</p>
                 <p className="py-4">
                   I am available for feelance or full-time positions. Contact me
                   and let's talk.
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <h4 className="uppercase pt-8 flex items-center justify-center tracking-widest">Let's Connect!</h4>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a href="https://www.linkedin.com/in/patrickbrandenburg/">

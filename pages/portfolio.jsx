@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '../public/assets/projects/property.jpg'
+import portfolioImg from '../public/assets/projects/portfolio.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { HiChevronDoubleLeft } from 'react-icons/hi'
 import Link from 'next/link'
@@ -12,13 +12,13 @@ const portfolio = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
-          src={propertyImg}
+          src={portfolioImg}
           fill
           style={{ objectFit: "cover" }}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Personal Portfolio</h2>
-          <h3>Next.JS Stack</h3>
+          <h3>Next.js Stack</h3>
         </div>
       </div>
 
@@ -29,7 +29,7 @@ const portfolio = () => {
           <p className='py-2'>
             This porfolio site is the result of research into the most used frontend frameworks
             and numerous tutorials showing how to create an aesthetically pleasing website from scratch.
-            I chose Next.JS as it is one of the most used frameworks for one of the most used frontend
+            I chose Next.js as it is one of the most used frameworks for one of the most used frontend
             libraries - React. I set out to create my own personal website from the ground up to showcase
             not only my resume and portfolio, but also my ability to learn a new technology stack 
             and gain experience with modern web development.
@@ -48,7 +48,7 @@ const portfolio = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next.JS
+                Next.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />

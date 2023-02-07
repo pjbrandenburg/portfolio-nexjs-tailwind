@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import propertyImg from '../public/assets/projects/property.jpg'
-import cryptoImg from '../public/assets/projects/crypto.jpg'
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import portfolioImg from '../public/assets/projects/portfolio.png'
+import studybudImg from '../public/assets/projects/studybud.png'
+import licensedetectorImg from '../public/assets/projects/license_detector.png'
+import ecommerceImg from '../public/assets/projects/ecommerce_cart.png'
 import Projectitem from './Projectitem'
 
 const Projects = () => {
@@ -17,22 +17,26 @@ const Projects = () => {
             
                 <Projectitem 
                     title='This Website!' 
-                    backgroundImg={propertyImg} 
+                    backgroundImg={portfolioImg} 
+                    stack='Next.js'
                     projectUrl='/portfolio' 
                 />
                 <Projectitem 
                     title='Discord Lookalike' 
-                    backgroundImg={cryptoImg} 
+                    backgroundImg={studybudImg} 
+                    stack='Django'
                     projectUrl='/chatroom' 
                 />
                 <Projectitem 
                     title='License Plate Detector' 
-                    backgroundImg={netflixImg} 
+                    backgroundImg={licensedetectorImg} 
+                    stack='OpenCV'
                     projectUrl='/licensedetector' 
                 />
                 <Projectitem 
                     title='E-Commerce Site' 
-                    backgroundImg={twitchImg} 
+                    backgroundImg={ecommerceImg} 
+                    stack='Next.js'
                     projectUrl='/ecommerce' 
                 />
 
