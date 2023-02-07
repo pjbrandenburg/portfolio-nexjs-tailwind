@@ -10,7 +10,7 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='upercase text-xl tracking-widest text-[#1f75fe]'>About</p>
                 <h2 className='py-4'>Who I Am</h2>
-                <p className='py-2 text-gray-600'>// Self-Starter, Motivated, Experienced</p>
+                <p className='py-2 text-gray-600'>Self-Starter, Motivated, Experienced</p>
                 <p className='py-2 text-gray-600'>
                 I've taken a hobby and turned it into a profession. Learning the ins-and-outs of
                 coding and software development in my spare time has lead me down a path of becoming
