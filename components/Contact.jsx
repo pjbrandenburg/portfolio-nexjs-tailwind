@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillHouseFill, BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -14,6 +14,40 @@ const audioWide = Audiowide({
 });
 
 const Contact = () => {
+
+  const [query, setQuery] = useState({
+    name: "",
+    email: ""
+  });
+
+  // Update inputs value
+  const handleParam = () => (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuery((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  // Form Submit function
+  const formSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    Object.entries(query).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    fetch("https://getform.io/f/978e7f83-7cb6-479f-9080-f11340f8dbcc", {
+      method: "POST",
+      body: formData
+    }).then(() => setQuery({ 
+        name: "", 
+        phone: "",
+        email: "", 
+        subject: "",
+        message: "" }));
+  };
+
   return (
     <div id="contact" className="w-full lg:screen">
       <div className="max-w-[1240px] m-auto px-2 py-32 w-full">
@@ -76,7 +110,9 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={formSubmit}
+                // action="https://getform.io/f/978e7f83-7cb6-479f-9080-f11340f8dbcc"  
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     {/* <label className='uppercase text-sm py-2'>
@@ -84,8 +120,11 @@ const Contact = () => {
                                     </label> */}
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
+                      name="name"
                       type="text"
                       placeholder="Name"
+                      value={query.name}
+                      onChange={handleParam()}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -94,8 +133,11 @@ const Contact = () => {
                                     </label> */}
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
+                      name="phone"
                       type="text"
                       placeholder="Phone Number"
+                      value={query.phone}
+                      onChange={handleParam()}
                     />
                   </div>
                 </div>
@@ -105,8 +147,11 @@ const Contact = () => {
                                     </label> */}
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="email"
                     type="email"
                     placeholder="Email"
+                    value={query.email}
+                    onChange={handleParam()}
                   />
                 </div>
 
@@ -116,8 +161,11 @@ const Contact = () => {
                                     </label> */}
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    name="subject"
                     type="text"
                     placeholder="Subject"
+                    value={query.subject}
+                    onChange={handleParam()}
                   />
                 </div>
 
@@ -128,8 +176,11 @@ const Contact = () => {
                   <textarea
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     rows="10"
+                    name="message"
                     type="text"
                     placeholder="Your Message"
+                    value={query.message}
+                    onChange={handleParam()}
                   />
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
